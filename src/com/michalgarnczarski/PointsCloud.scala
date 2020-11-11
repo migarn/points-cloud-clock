@@ -8,8 +8,9 @@ object PointsCloud {
   def apply(radius: Int, pointsNumber: Int): List[(Int, Int)] = {
 
     def generatePoint(): (Int, Int) = {
+      val tempRadius: Int = Random.nextInt(radius)
       val angle: Double = Random.nextDouble() * 2 * Pi
-      ((radius * cos(angle)).round.toInt, (radius * sin(angle)).round.toInt)
+      ((tempRadius * cos(angle)).round.toInt, (tempRadius * sin(angle)).round.toInt)
     }
 
     List.fill(pointsNumber)(generatePoint())
