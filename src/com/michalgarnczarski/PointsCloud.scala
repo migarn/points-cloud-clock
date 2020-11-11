@@ -10,7 +10,6 @@ class PointsCloud {
     def generatePoint(): (Int, Int) =
       (radius * cos(Random.nextDouble() * 2 * Pi).round.toInt, radius * sin(Random.nextDouble() * 2 * Pi).round.toInt)
 
-    null
+    List.fill(pointsNumber)(generatePoint())
   }
-
 }
