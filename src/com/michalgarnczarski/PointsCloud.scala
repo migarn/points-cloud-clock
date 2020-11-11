@@ -3,7 +3,7 @@ package com.michalgarnczarski
 import scala.util.Random
 import scala.math.{cos, sin, Pi}
 
-class PointsCloud {
+object PointsCloud {
 
   def apply(radius: Int, pointsNumber: Int): List[(Int, Int)] = {
 
