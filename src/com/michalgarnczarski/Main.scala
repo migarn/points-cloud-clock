@@ -8,11 +8,11 @@ object Main extends SimpleSwingApplication {
     title = "Hello"
     preferredSize = new Dimension(300, 200)
 
-    contents = new Label {
-      text = "Hello!"
-      font = new Font("Arial", BOLD, 24)
-      resizable = false
+    val canvas = new Canvas {
+      preferredSize = new Dimension(100, 100)
     }
+
+    contents = canvas
 
     peer.setLocationRelativeTo(null)
   }
