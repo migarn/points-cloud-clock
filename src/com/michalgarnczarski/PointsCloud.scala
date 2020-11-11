@@ -1,16 +1,16 @@
 package com.michalgarnczarski
 
 import scala.util.Random
-import scala.math.{cos, sin, Pi}
 
 object PointsCloud {
 
   def apply(radius: Int, pointsNumber: Int): List[(Int, Int)] = {
 
     def generatePoint(): (Int, Int) = {
-      val tempRadius: Int = Random.nextInt(radius)
-      val angle: Double = Random.nextDouble() * 2 * Pi
-      ((tempRadius * cos(angle)).round.toInt, (tempRadius * sin(angle)).round.toInt)
+      val x: Int = Random.nextInt(2 * radius) - radius
+      val y: Int = Random.nextInt(2 * radius) - radius
+      if (x * x + y * y <= radius * radius) (x, y)
+      else generatePoint()
     }
 
     List.fill(pointsNumber)(generatePoint())
