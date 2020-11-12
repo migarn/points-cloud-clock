@@ -29,10 +29,11 @@ class Canvas extends Panel {
 //    g.setColor(centerColor)
 //    g.fillOval(40, 40, 20, 20)
 
-    val list = PointsCloud(100,10000)
+    val list = PointsCloud(100,20000)
 
     list.foreach(x => {
-      g.setColor(colors(Random.nextInt(colors.length - 1)))
+      if (x._1 * x._1 + x._2 * x._2 > 95 * 95) g.setColor(Color.RED)
+      else g.setColor(colors(Random.nextInt(colors.length - 1)))
       g.drawOval(x._1 + 150, x._2 + 150, 1, 1)
     })
 
