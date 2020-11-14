@@ -33,6 +33,16 @@ object ClockHands {
       secondInHour * (-Pi / 1800) + 5 * Pi / 2
   }
 
+  def hoursHandSlope: Double = {
+    val currentHours: Int = Calendar.getInstance().get(Calendar.HOUR)
+    val currentMinutes: Int = Calendar.getInstance().get(Calendar.MINUTE)
+    val minuteInHour: Int = currentHours * 60 + currentMinutes
+    if (minuteInHour < 180)
+      minuteInHour * (-Pi / 360) + Pi / 2
+    else
+      minuteInHour * (-Pi / 360) + 5 * Pi / 2
+  }
+
   // to refactor
   def printHand(x: Int, y: Int, slope: Double): Boolean = {
     if (slope == 0)
