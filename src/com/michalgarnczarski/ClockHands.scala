@@ -16,11 +16,21 @@ object ClockHands {
   def secondsHandSlopeContinuous: Double = {
     val currentSeconds: Int = Calendar.getInstance().get(Calendar.SECOND)
     val currentMilliseconds: Int = Calendar.getInstance().get(Calendar.MILLISECOND)
-    val millisecondsInMinute: Int = currentSeconds * 1000 + currentMilliseconds
-    if (millisecondsInMinute < 15000)
-      millisecondsInMinute * (-Pi / 30000) + Pi / 2
+    val millisecondInMinute: Int = currentSeconds * 1000 + currentMilliseconds
+    if (millisecondInMinute < 15000)
+      millisecondInMinute * (-Pi / 30000) + Pi / 2
     else
-      millisecondsInMinute * (-Pi / 30000) + 5 * Pi / 2
+      millisecondInMinute * (-Pi / 30000) + 5 * Pi / 2
+  }
+
+  def minutesHandSlope: Double = {
+    val currentMinutes: Int = Calendar.getInstance().get(Calendar.MINUTE)
+    val currentSeconds: Int = Calendar.getInstance().get(Calendar.SECOND)
+    val secondInHour: Int = currentMinutes * 60 + currentSeconds
+    if (secondInHour < 900)
+      secondInHour * (-Pi / 1800) + Pi / 2
+    else
+      secondInHour * (-Pi / 1800) + 5 * Pi / 2
   }
 
   // to refactor

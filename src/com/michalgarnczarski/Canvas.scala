@@ -34,6 +34,7 @@ class Canvas extends Panel {
     list.foreach(x => {
       if (x._1 * x._1 + x._2 * x._2 > 95 * 95) g.setColor(Color.RED)
       else if (ClockHands.printHand(x._1, x._2 * -1, ClockHands.secondsHandSlopeContinuous)) g.setColor(Color.BLUE)
+      else if (ClockHands.printHand(x._1, x._2 * -1, ClockHands.minutesHandSlope)) g.setColor(Color.GREEN)
       else g.setColor(colors(Random.nextInt(colors.length - 1)))
       g.drawOval(x._1 + 150, x._2 + 150, 1, 1)
     })
