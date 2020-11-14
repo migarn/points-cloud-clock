@@ -7,9 +7,9 @@ object ClockHands {
 
   def secondsHandSlopeDiscrete: Double = {
     val currentSeconds: Int = Calendar.getInstance().get(Calendar.SECOND)
-    currentSeconds * (-Pi / 30) + Pi / 2
+    if (currentSeconds < 15)
+      currentSeconds * (-Pi / 30) + Pi / 2
+    else
+      currentSeconds * (-Pi / 30) + 5 * Pi / 2
   }
-
-
-
 }
