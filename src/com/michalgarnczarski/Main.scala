@@ -2,6 +2,7 @@ package com.michalgarnczarski
 
 import scala.swing._
 import java.awt.Font.BOLD
+import java.util.Calendar
 
 object Main extends SimpleSwingApplication {
 //  def top = new MainFrame {
@@ -24,6 +25,7 @@ object Main extends SimpleSwingApplication {
     val t = new java.util.Timer()
     val task = new java.util.TimerTask {
       def run() = {
+
 
         val canvas = new Canvas {
           preferredSize = new Dimension(100, 100)
