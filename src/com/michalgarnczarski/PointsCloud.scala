@@ -4,6 +4,8 @@ import scala.util.Random
 
 object PointsCloud {
 
+  // Object generates a disk-shaped cloud of single points.
+
   def apply(radius: Int, pointsNumber: Int): List[(Int, Int)] = {
 
     def generatePoint(): (Int, Int) = {
