@@ -50,7 +50,7 @@ object ClockHands {
         true
       else false
     else if (slope > 0 && slope < Pi /2)
-      if (!(x < 0 && y < 0) && pointLineDistance(x, y, slope) < 2)
+      if (y >= -x / Math.tan(slope) && pointLineDistance(x, y, slope) < 2)
         true
       else false
     else if (slope == Pi / 2)
@@ -58,7 +58,7 @@ object ClockHands {
         true
       else false
     else if (slope > Pi / 2 && slope < Pi)
-      if (!(x > 0 && y < 0) && pointLineDistance(x, y, slope) < 2)
+      if (y >= -x / Math.tan(slope) && pointLineDistance(x, y, slope) < 2)
         true
       else false
     else if (slope == Pi)
@@ -66,7 +66,7 @@ object ClockHands {
         true
       else false
     else if (slope > Pi && slope < 3 * Pi / 2)
-      if (!(x > 0 && y > 0) && pointLineDistance(x, y, slope) < 2)
+      if (y <= -x / Math.tan(slope) && pointLineDistance(x, y, slope) < 2)
         true
       else false
     else if (slope == 3 * Pi / 2)
@@ -74,7 +74,7 @@ object ClockHands {
         true
       else false
     else if (slope > 3 * Pi / 2 && slope < 2 * Pi)
-      if (!(x < 0 && y > 0) && pointLineDistance(x, y, slope) < 2)
+      if (y <= -x / Math.tan(slope) && pointLineDistance(x, y, slope) < 2)
         true
       else false
     else if (slope == 2 * Pi)
