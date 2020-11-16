@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="064c4093-2733-4206-a466-c9b57709b208" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/michalgarnczarski/ClockHands.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/michalgarnczarski/ClockHands.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/michalgarnczarski/PointsCloud.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/michalgarnczarski/PointsCloud.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,20 +34,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/michalgarnczarski/PointsCloud.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+            <state relative-caret-position="255">
+              <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/michalgarnczarski/ClockHands.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="35" column="109" lean-forward="true" selection-start-line="35" selection-start-column="109" selection-end-line="35" selection-end-column="109" />
+            <state relative-caret-position="714">
+              <caret line="42" column="3" lean-forward="true" selection-start-line="42" selection-start-column="3" selection-end-line="42" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -74,8 +73,8 @@
         <option value="$PROJECT_DIR$/src/com/michalgarnczarski/Main.scala" />
         <option value="$PROJECT_DIR$/src/com/michalgarnczarski/Demo.scala" />
         <option value="$PROJECT_DIR$/src/com/michalgarnczarski/Canvas.scala" />
-        <option value="$PROJECT_DIR$/src/com/michalgarnczarski/PointsCloud.scala" />
         <option value="$PROJECT_DIR$/src/com/michalgarnczarski/ClockHands.scala" />
+        <option value="$PROJECT_DIR$/src/com/michalgarnczarski/PointsCloud.scala" />
       </list>
     </option>
   </component>
@@ -119,7 +118,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1605552400999" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1605552472503" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../scalafx_2.13-14-R19.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -275,17 +274,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/michalgarnczarski/PointsCloud.scala">
+    <entry file="file://$PROJECT_DIR$/src/com/michalgarnczarski/ClockHands.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+        <state relative-caret-position="714">
+          <caret line="42" column="3" lean-forward="true" selection-start-line="42" selection-start-column="3" selection-end-line="42" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/michalgarnczarski/ClockHands.scala">
+    <entry file="file://$PROJECT_DIR$/src/com/michalgarnczarski/PointsCloud.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="109" lean-forward="true" selection-start-line="35" selection-start-column="109" selection-end-line="35" selection-end-column="109" />
+        <state relative-caret-position="255">
+          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
         </state>
       </provider>
     </entry>
