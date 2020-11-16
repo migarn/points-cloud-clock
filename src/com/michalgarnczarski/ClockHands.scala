@@ -7,40 +7,36 @@ object ClockHands {
 
   def secondsHandSlopeDiscrete: Double = {
     val currentSeconds: Int = Calendar.getInstance().get(Calendar.SECOND)
-    if (currentSeconds < 15)
-      currentSeconds * (-Pi / 30) + Pi / 2
-    else
-      currentSeconds * (-Pi / 30) + 5 * Pi / 2
+    calculateSlope(60, currentSeconds)
   }
 
   def secondsHandSlopeContinuous: Double = {
     val currentSeconds: Int = Calendar.getInstance().get(Calendar.SECOND)
     val currentMilliseconds: Int = Calendar.getInstance().get(Calendar.MILLISECOND)
     val millisecondInMinute: Int = currentSeconds * 1000 + currentMilliseconds
-    if (millisecondInMinute < 15000)
-      millisecondInMinute * (-Pi / 30000) + Pi / 2
-    else
-      millisecondInMinute * (-Pi / 30000) + 5 * Pi / 2
+    calculateSlope(60000, millisecondInMinute)
   }
 
   def minutesHandSlope: Double = {
     val currentMinutes: Int = Calendar.getInstance().get(Calendar.MINUTE)
     val currentSeconds: Int = Calendar.getInstance().get(Calendar.SECOND)
     val secondInHour: Int = currentMinutes * 60 + currentSeconds
-    if (secondInHour < 900)
-      secondInHour * (-Pi / 1800) + Pi / 2
-    else
-      secondInHour * (-Pi / 1800) + 5 * Pi / 2
+    calculateSlope(3600, secondInHour)
   }
 
   def hoursHandSlope: Double = {
     val currentHours: Int = Calendar.getInstance().get(Calendar.HOUR)
     val currentMinutes: Int = Calendar.getInstance().get(Calendar.MINUTE)
     val minuteInHour: Int = currentHours * 60 + currentMinutes
-    if (minuteInHour < 180)
-      minuteInHour * (-Pi / 360) + Pi / 2
+    calculateSlope(720, minuteInHour)
+  }
+
+  private def calculateSlope(unitsPerCircle: Int, currentValue: Int): Double = {
+    if (currentValue < 0.25 * unitsPerCircle)
+      -(2 * Pi / unitsPerCircle) * currentValue + 0.5 * Pi
     else
-      minuteInHour * (-Pi / 360) + 5 * Pi / 2
+      -(2 * Pi / unitsPerCircle) * currentValue + 2.5 * Pi
+
   }
 
   // to refactor
