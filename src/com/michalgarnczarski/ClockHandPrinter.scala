@@ -9,8 +9,12 @@ object ClockHandPrinter {
   def printHandPoint(x: Int, y: Int, slope: Double, length: Int, thickness: Int): Boolean = {
     val inLength: Boolean = x * x + y * y < length * length
     val inThickness: Boolean = {
-      val a: Double = if (slope == 0.5 * Pi || slope == 1.5 * Pi) 0 else tan(slope)
-      abs(a * x - y) / sqrt(a * a + 1) < 0.5 * thickness
+      if (slope == 0.5 * Pi || slope == 1.5 * Pi)
+        abs(x) < 0.5 * thickness
+      else {
+        val a: Double = tan(slope)
+        abs(a * x - y) / sqrt(a * a + 1) < 0.5 * thickness
+      }
     }
 
     if (inThickness && inLength && (
