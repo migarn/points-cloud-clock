@@ -36,7 +36,7 @@ object ClockHands {
   // Function calculates slope of a line. For 2nd, 3rd and 4th quarter 2 Pi is added to avoid negative value.
 
   private def calculateSlope(unitsPerCircle: Int, currentValue: Int): Double = {
-    if (currentValue < 0.25 * unitsPerCircle)
+    if (currentValue <= 0.25 * unitsPerCircle)
       -(2 * Pi / unitsPerCircle) * currentValue + 0.5 * Pi
     else
       -(2 * Pi / unitsPerCircle) * currentValue + 2.5 * Pi
