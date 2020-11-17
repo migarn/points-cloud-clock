@@ -34,6 +34,7 @@ class Canvas extends Panel {
     list.foreach(x => {
       if (x._1 * x._1 + x._2 * x._2 > 95 * 95) g.setColor(Color.RED)
       else if (MarkerPrinter.printMainMarkers(100, x._1, -x._2, 20, 5)) g.setColor(Color.RED)
+      else if (MarkerPrinter.printExtraMarkers(100, x._1, -x._2, 20, 2)) g.setColor(Color.RED)
       else if (ClockHandPrinter.printHandPoint(x._1, -x._2, ClockHands.secondsHandSlopeDiscrete, 80, 6)) g.setColor(Color.BLUE)
       else if (ClockHandPrinter.printHandPoint(x._1, -x._2, ClockHands.minutesHandSlope, 70, 6)) g.setColor(Color.BLUE)
       else if (ClockHandPrinter.printHandPoint(x._1, -x._2, ClockHands.hoursHandSlope, 50, 6)) g.setColor(Color.BLUE)
