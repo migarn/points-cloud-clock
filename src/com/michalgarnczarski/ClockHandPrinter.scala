@@ -19,7 +19,8 @@ object ClockHandPrinter {
         (slope == Pi && x <= 0) ||
         (slope > Pi && slope < 1.5 * Pi && y <= -x / tan(slope)) ||
         (slope == 1.5 * Pi && y < 0) ||
-        (slope > 1.5 * Pi && slope < 2 * Pi && y <= -x / tan(slope)) ||
-        (slope == 2 * Pi && x >= 0))) true else false
+        (slope > 1.5 * Pi && slope < 2 * Pi && y <= -x / tan(slope))))
+      true
+    else false
   }
 }
