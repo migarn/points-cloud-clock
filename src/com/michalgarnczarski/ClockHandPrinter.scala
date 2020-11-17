@@ -4,6 +4,8 @@ import scala.math.{Pi, abs, tan, sqrt}
 
 object ClockHandPrinter {
 
+  // Function determines if a point belongs to given clock hand
+
   def printHandPoint(x: Int, y: Int, slope: Double, length: Int, thickness: Int): Boolean = {
     val inLength: Boolean = x * x + y * y < length * length
     val inThickness: Boolean = {
