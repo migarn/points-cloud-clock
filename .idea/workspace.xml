@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="064c4093-2733-4206-a466-c9b57709b208" name="Default Changelist" comment="" />
+    <list default="true" id="064c4093-2733-4206-a466-c9b57709b208" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/com/michalgarnczarski/MarkerPrinter.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/michalgarnczarski/MarkerPrinter.scala" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,8 +55,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/michalgarnczarski/ClockHandPrinter.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+            <state relative-caret-position="136">
+              <caret line="8" column="79" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="79" />
             </state>
           </provider>
         </entry>
@@ -62,8 +64,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/michalgarnczarski/MarkerPrinter.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="22" lean-forward="true" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+            <state relative-caret-position="221">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
@@ -92,6 +94,7 @@
         <option value="$PROJECT_DIR$/src/com/michalgarnczarski/Demo.scala" />
         <option value="$PROJECT_DIR$/src/com/michalgarnczarski/ClockHands.scala" />
         <option value="$PROJECT_DIR$/src/com/michalgarnczarski/ClockHandPrinter.scala" />
+        <option value="$PROJECT_DIR$/src/com/michalgarnczarski/MarkerPrinter.scala" />
       </list>
     </option>
   </component>
@@ -135,7 +138,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1605634180491" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1605634384017" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../scalafx_2.13-14-R19.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -307,15 +310,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/michalgarnczarski/ClockHandPrinter.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        <state relative-caret-position="136">
+          <caret line="8" column="79" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="79" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/michalgarnczarski/MarkerPrinter.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="22" lean-forward="true" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        <state relative-caret-position="221">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
