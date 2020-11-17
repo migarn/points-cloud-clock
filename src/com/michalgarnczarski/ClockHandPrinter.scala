@@ -4,6 +4,10 @@ import scala.math.Pi
 
 object ClockHandPrinter {
 
+  def printHandPoint(x: Int, y: Int, slope: Double, faceRadius: Int, handFaceRatio: Double, thickness: Int): Boolean = {
+
+  }
+
   // to refactor
   def printHand(x: Int, y: Int, slope: Double): Boolean = {
     if (slope == 0)
