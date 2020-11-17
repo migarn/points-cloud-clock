@@ -11,7 +11,7 @@ object MarkerPrinter {
     val hand12: Boolean = ClockHandPrinter.printHandPoint(x, y, 0.5 * Pi, radius, thickness)
     val hand3: Boolean = ClockHandPrinter.printHandPoint(x, y, 0, radius, thickness)
     val hand6: Boolean = ClockHandPrinter.printHandPoint(x, y, 1.5 * Pi, radius, thickness)
-    val hand9: Boolean = ClockHandPrinter.printHandPoint(x, y, 2 * Pi, radius, thickness)
+    val hand9: Boolean = ClockHandPrinter.printHandPoint(x, y, Pi, radius, thickness)
 
     if (inLength(radius, x, y, length) && (hand12 || hand3 || hand6 || hand9)) true
     else false
