@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="064c4093-2733-4206-a466-c9b57709b208" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/michalgarnczarski/ClockHandPrinter.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/michalgarnczarski/ClockHandPrinter.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -56,8 +55,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/michalgarnczarski/ClockHandPrinter.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="255">
+              <caret line="15" column="66" lean-forward="true" selection-start-line="15" selection-start-column="66" selection-end-line="15" selection-end-column="66" />
             </state>
           </provider>
         </entry>
@@ -65,8 +64,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/michalgarnczarski/Demo.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="153">
+              <caret line="9" column="59" lean-forward="true" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -81,10 +80,10 @@
       <list>
         <option value="$PROJECT_DIR$/src/com/michalgarnczarski/HelloStageDemo.scala" />
         <option value="$PROJECT_DIR$/src/com/michalgarnczarski/Main.scala" />
-        <option value="$PROJECT_DIR$/src/com/michalgarnczarski/Demo.scala" />
         <option value="$PROJECT_DIR$/src/com/michalgarnczarski/PointsCloud.scala" />
         <option value="$PROJECT_DIR$/src/com/michalgarnczarski/ClockHands.scala" />
         <option value="$PROJECT_DIR$/src/com/michalgarnczarski/Canvas.scala" />
+        <option value="$PROJECT_DIR$/src/com/michalgarnczarski/Demo.scala" />
         <option value="$PROJECT_DIR$/src/com/michalgarnczarski/ClockHandPrinter.scala" />
       </list>
     </option>
@@ -129,7 +128,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1605552919752" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1605632643372" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../scalafx_2.13-14-R19.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -148,7 +147,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Demo">
     <configuration name="Demo" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.michalgarnczarski.Demo" />
       <module name="PointsCloudClock" />
@@ -190,8 +189,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Demo" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.HelloStageDemo" />
       </list>
     </recent_temporary>
@@ -278,13 +277,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/michalgarnczarski/Demo.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/michalgarnczarski/Canvas.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -299,10 +291,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/michalgarnczarski/ClockHandPrinter.scala">
+    <entry file="file://$PROJECT_DIR$/src/com/michalgarnczarski/Demo.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <caret line="9" column="59" lean-forward="true" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/michalgarnczarski/ClockHandPrinter.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="66" lean-forward="true" selection-start-line="15" selection-start-column="66" selection-end-line="15" selection-end-column="66" />
         </state>
       </provider>
     </entry>
