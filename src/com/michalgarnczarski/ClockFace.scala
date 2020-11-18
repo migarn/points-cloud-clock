@@ -5,7 +5,7 @@ import java.awt.{Color, Graphics2D}
 
 import scala.util.Random
 
-class Canvas extends Panel {
+class ClockFace extends Panel {
   var centerColor = Color.yellow
 
   val colors = List(new Color(225, 221, 153),
