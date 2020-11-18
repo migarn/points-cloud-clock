@@ -3,36 +3,28 @@ package com.michalgarnczarski
 import scala.swing._
 import java.awt.{Color, Graphics2D}
 
-import scala.util.Random
-
 class ClockFace(radius: Int, pointsNumber: Int) extends Panel {
 
-  val faceColor = new Color(253, 217, 118)
+  val faceColor: Color = new Color(253, 217, 118)
+  val frameColor: Color = Color.RED
+  val handsColor: Color = Color.BLUE
 
-  override def paintComponent(g: Graphics2D) {
+  override def paintComponent(graphic: Graphics2D) {
+    graphic.clearRect(0, 0, size.width, size.height)
+    val pointsCloud = PointsCloud(radius, pointsNumber)
 
-    // Start by erasing this Canvas
-    g.clearRect(0, 0, size.width, size.height)
-
-//    // Draw background here
-//    g.setColor(Color.blue)
-//    g.fillOval(0, 0, 100, 100)
-//    g.setColor(Color.red)
-//    g.fillOval(20, 20, 60, 60)
-//    g.setColor(centerColor)
-//    g.fillOval(40, 40, 20, 20)
-
-    val list = PointsCloud(radius, pointsNumber)
-
-    list.foreach(x => {
-      if (x._1 * x._1 + x._2 * x._2 > 95 * 95) g.setColor(Color.RED)
-      else if (MarkerPrinter.printMainMarkers(radius, x._1, -x._2, 20, 5)) g.setColor(Color.RED)
-      else if (MarkerPrinter.printExtraMarkers(radius, x._1, -x._2, 20, 2)) g.setColor(Color.RED)
-      else if (ClockHandPrinter.printHandPoint(x._1, -x._2, ClockHands.secondsHandSlopeDiscrete, 80, 6)) g.setColor(Color.BLUE)
-      else if (ClockHandPrinter.printHandPoint(x._1, -x._2, ClockHands.minutesHandSlope, 70, 6)) g.setColor(Color.BLUE)
-      else if (ClockHandPrinter.printHandPoint(x._1, -x._2, ClockHands.hoursHandSlope, 50, 6)) g.setColor(Color.BLUE)
-      else g.setColor(faceColor)
-      g.drawOval(x._1 + 150, x._2 + 150, 1, 1)
+    pointsCloud.foreach(point => {
+      if ((point._1 * point._1 + point._2 * point._2 > 0.9 * (radius * radius)) ||
+          MarkerPrinter.printMainMarkers(radius, point._1, -point._2, (0.2 * radius).toInt, 6) ||
+          MarkerPrinter.printExtraMarkers(radius, point._1, -point._2, (0.15 * radius).toInt, 3))
+        graphic.setColor(frameColor)
+      else if (ClockHandPrinter.printHandPoint(point._1, -point._2, ClockHands.secondsHandSlopeDiscrete, (0.8 * radius).toInt, 6) ||
+          ClockHandPrinter.printHandPoint(point._1, -point._2, ClockHands.minutesHandSlope, 70, 6) ||
+          ClockHandPrinter.printHandPoint(point._1, -point._2, ClockHands.hoursHandSlope, 50, 6))
+        graphic.setColor(handsColor)
+      else
+        graphic.setColor(faceColor)
+      graphic.drawOval(point._1 + 150, point._2 + 150, 1, 1)
     })
   }
 }
