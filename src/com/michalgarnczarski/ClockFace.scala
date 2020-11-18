@@ -7,13 +7,7 @@ import scala.util.Random
 
 class ClockFace(radius: Int, pointsNumber: Int) extends Panel {
 
-  val colors = List(new Color(225, 221, 153),
-    new Color(255, 212, 128),
-    new Color(255, 204, 102),
-    new Color(255, 230, 102),
-    new Color(255, 212, 128),
-    new Color(255, 179, 25)
-    )
+  val faceColor = new Color(253, 217, 118)
 
   override def paintComponent(g: Graphics2D) {
 
@@ -32,20 +26,13 @@ class ClockFace(radius: Int, pointsNumber: Int) extends Panel {
 
     list.foreach(x => {
       if (x._1 * x._1 + x._2 * x._2 > 95 * 95) g.setColor(Color.RED)
-      else if (MarkerPrinter.printMainMarkers(100, x._1, -x._2, 20, 5)) g.setColor(Color.RED)
-      else if (MarkerPrinter.printExtraMarkers(100, x._1, -x._2, 20, 2)) g.setColor(Color.RED)
+      else if (MarkerPrinter.printMainMarkers(radius, x._1, -x._2, 20, 5)) g.setColor(Color.RED)
+      else if (MarkerPrinter.printExtraMarkers(radius, x._1, -x._2, 20, 2)) g.setColor(Color.RED)
       else if (ClockHandPrinter.printHandPoint(x._1, -x._2, ClockHands.secondsHandSlopeDiscrete, 80, 6)) g.setColor(Color.BLUE)
       else if (ClockHandPrinter.printHandPoint(x._1, -x._2, ClockHands.minutesHandSlope, 70, 6)) g.setColor(Color.BLUE)
       else if (ClockHandPrinter.printHandPoint(x._1, -x._2, ClockHands.hoursHandSlope, 50, 6)) g.setColor(Color.BLUE)
-      else g.setColor(colors(Random.nextInt(colors.length - 1)))
+      else g.setColor(faceColor)
       g.drawOval(x._1 + 150, x._2 + 150, 1, 1)
     })
-
-
-
-//    g.drawOval(0,0,1,1)
-
   }
-
-
 }
