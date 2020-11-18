@@ -5,6 +5,8 @@ import java.awt.{Color, Graphics2D}
 
 class ClockFace(radius: Int, pointsNumber: Int) extends Panel {
 
+  // Class printing points-cloud-based clock face.
+
   val faceColor: Color = new Color(253, 217, 118)
   val frameColor: Color = Color.RED
   val handsColor: Color = Color.BLUE
