@@ -7,7 +7,7 @@ object Main extends SimpleSwingApplication {
 
   def top: MainFrame = new MainFrame {
     title = "Points Cloud Clock"
-    preferredSize = new Dimension(240, 260)
+    preferredSize = new Dimension(320, 340)
 
     val timer: Timer = new Timer
     val task: TimerTask = new TimerTask {
