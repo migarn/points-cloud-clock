@@ -36,10 +36,4 @@ object MarkerPrinter {
 
   private def inLength(radius: Int, x: Int, y: Int, length: Int): Boolean =
     x * x + y * y > (radius - length) * (radius - length)
-
-  private def inThickness(slope: Double, x: Int, y: Int, thickness: Int): Boolean = {
-    val a: Double = if (slope == 0.5 * Pi || slope == 1.5 * Pi) 0 else tan(slope)
-    abs(a * x - y) / sqrt(a * a + 1) < 0.5 * thickness
-  }
-
 }
