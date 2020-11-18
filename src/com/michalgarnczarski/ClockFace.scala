@@ -20,9 +20,9 @@ class ClockFace(radius: Int, pointsNumber: Int) extends Panel {
           MarkerPrinter.printMainMarkers(radius, point._1, -point._2, (0.2 * radius).toInt, 6) ||
           MarkerPrinter.printExtraMarkers(radius, point._1, -point._2, (0.15 * radius).toInt, 3))
         graphic.setColor(frameColor)
-      else if (ClockHandPrinter.printHandPoint(point._1, -point._2, ClockHands.secondsHandSlopeDiscrete, (0.8 * radius).toInt, 6) ||
+      else if (ClockHandPrinter.printHandPoint(point._1, -point._2, ClockHands.secondsHandSlopeDiscrete, (0.8 * radius).toInt, 3) ||
           ClockHandPrinter.printHandPoint(point._1, -point._2, ClockHands.minutesHandSlope, 70, 6) ||
-          ClockHandPrinter.printHandPoint(point._1, -point._2, ClockHands.hoursHandSlope, 50, 6))
+          ClockHandPrinter.printHandPoint(point._1, -point._2, ClockHands.hoursHandSlope, 50, 8))
         graphic.setColor(handsColor)
       else
         graphic.setColor(faceColor)

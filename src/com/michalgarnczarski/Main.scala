@@ -5,7 +5,7 @@ import scala.swing._
 object Main extends SimpleSwingApplication {
 
   def top = new MainFrame {
-    title = "Hello"
+    title = "Points Cloud Clock"
     preferredSize = new Dimension(325, 325)
 
     val t = new java.util.Timer()
