@@ -26,7 +26,7 @@ class ClockFace(radius: Int, pointsNumber: Int) extends Panel {
         graphic.setColor(handsColor)
       else
         graphic.setColor(faceColor)
-      graphic.drawOval(point._1 + 150, point._2 + 150, 1, 1)
+      graphic.drawOval(point._1 + 110, point._2 + 110, 1, 1)
     })
   }
 }
