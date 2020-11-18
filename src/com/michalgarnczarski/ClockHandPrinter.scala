@@ -18,14 +18,14 @@ object ClockHandPrinter {
     }
 
     if (inThickness && inLength && (
-        (slope == 0 && x >= 0) ||
-        (slope > 0 && slope < 0.5 * Pi && y >= -x / tan(slope)) ||
-        (slope == 0.5 * Pi && y >= 0) ||
-        (slope > 0.5 * Pi && slope < Pi && y >= -x / tan(slope)) ||
-        (slope == Pi && x <= 0) ||
-        (slope > Pi && slope < 1.5 * Pi && y <= -x / tan(slope)) ||
-        (slope == 1.5 * Pi && y < 0) ||
-        (slope > 1.5 * Pi && slope < 2 * Pi && y <= -x / tan(slope))))
+       (slope == 0 && x >= 0) ||
+       (slope > 0 && slope < 0.5 * Pi && y >= -x / tan(slope)) ||
+       (slope == 0.5 * Pi && y >= 0) ||
+       (slope > 0.5 * Pi && slope < Pi && y >= -x / tan(slope)) ||
+       (slope == Pi && x <= 0) ||
+       (slope > Pi && slope < 1.5 * Pi && y <= -x / tan(slope)) ||
+       (slope == 1.5 * Pi && y < 0) ||
+       (slope > 1.5 * Pi && slope < 2 * Pi && y <= -x / tan(slope))))
       true
     else false
   }
