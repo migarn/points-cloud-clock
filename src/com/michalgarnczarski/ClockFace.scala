@@ -5,8 +5,7 @@ import java.awt.{Color, Graphics2D}
 
 import scala.util.Random
 
-class ClockFace extends Panel {
-  var centerColor = Color.yellow
+class ClockFace(radius: Int, pointsNumber: Int) extends Panel {
 
   val colors = List(new Color(225, 221, 153),
     new Color(255, 212, 128),
@@ -29,7 +28,7 @@ class ClockFace extends Panel {
 //    g.setColor(centerColor)
 //    g.fillOval(40, 40, 20, 20)
 
-    val list = PointsCloud(100,20000)
+    val list = PointsCloud(radius, pointsNumber)
 
     list.foreach(x => {
       if (x._1 * x._1 + x._2 * x._2 > 95 * 95) g.setColor(Color.RED)

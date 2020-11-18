@@ -27,7 +27,7 @@ object Main extends SimpleSwingApplication {
       def run() = {
 
 
-        val canvas = new ClockFace {
+        val canvas = new ClockFace(100, 20000) {
           preferredSize = new Dimension(100, 100)
         }
 
